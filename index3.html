@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Keerthi Sagari Velpuri | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4db6ac;
+      --bg: #f9f9f9;
+      --text-dark: #212121;
+      --text-light: #616161;
+      --card-bg: #ffffff;
+      --border: #e0e0e0;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text-dark);
+    }
+
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: #ffffffd9;
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      padding: 70px 10% 50px;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    .hero h2 {
+      font-size: 2.6rem;
+      color: var(--primary);
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin-top: 1rem;
+      color: var(--text-light);
+    }
+
+    .btns {
+      margin-top: 1.5rem;
+    }
+
+    .btns a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      border: 2px solid var(--primary);
+      border-radius: 30px;
+      text-decoration: none;
+      color: var(--primary);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btns a:hover {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    h2 {
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+      font-size: 1.8rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    h3 {
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+      font-size: 1.2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    ul li {
+      line-height: 1.6;
+      color: var(--text-dark);
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: #fafafa;
+      color: var(--text-light);
+      font-size: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+
+    @media screen and (max-width: 768px) {
+      header, section {
+        padding: 1rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Keerthi Sagari</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#certificates">Certificates</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Hello, I'm Keerthi Sagari Velpuri</h2>
+  <p>A passionate B.Tech student with a keen interest in Programming, AI, and Creative Technologies. Eager to build a successful career through learning and collaboration.</p>
+  <div class="btns">
+    <a href="mailto:keerthivelpuri9@gmail.com">Email</a>
+    <a href="https://github.com/KeerthiSagari/KeerthiSagari.git" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/keerthi-velpuri-44429626a" target="_blank">LinkedIn</a>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <div class="card">
+    <p>I am currently pursuing my B.Tech at Vasireddy Venkatadri Institute of Technology. I love working on innovative projects, exploring new AI tools, and enhancing my programming skills to solve real-world problems effectively.</p>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="card">
+    <p>C Programming | Python | SQL | R Programming | HTML & CSS | JavaScript | AI Tools Management</p>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="card">
+    <h3>Crop Yield Prediction using Machine Learning</h3>
+    <p>This project predicts the crop yield with a remarkable 93.8% accuracy based on various input factors. It intelligently guides users by giving warnings for incorrect data rather than throwing errors, enhancing usability and reliability.</p>
+  </div>
+</section>
+
+<section id="certificates">
+  <h2>Certificates</h2>
+  <div class="card">
+    <ul>
+      <li><strong>L4G - Google Cloud Skills Boost:</strong> Hands-on experience with cloud infrastructure and services.</li>
+      <li><strong>Generative AI by Google Cloud:</strong> Introduced to AI concepts like transformers and language models.</li>
+      <li><strong>Basics of Python - Infosys:</strong> Developed foundational programming and logic-building skills in Python.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    <p>
+      📧 <a href="mailto:keerthivelpuri9@gmail.com">keerthivelpuri9@gmail.com</a><br>
+      📞 +91 6300721197<br>
+      📍 Pedakakani, India
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Keerthi Sagari Velpuri. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
